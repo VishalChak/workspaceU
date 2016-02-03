@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class LCS {
+	static Scanner scan = new Scanner (System.in);
+	static String str1,str2;
+	public static void main(String args[]){
+		str1= scan.next();
+		str2=  scan.next();
+	}
+	
+	public static int lcsLength(int i,int j){
+		if(str1.charAt(i)==str2.charAt(j)){
+			
+		}
+	}
+	
+}

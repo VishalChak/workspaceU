@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class FabDPBotUP {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String args[]){
+		int n = scan.nextInt();
+	}
+	
+	public static int fib(int n){
+		
+	}
+}

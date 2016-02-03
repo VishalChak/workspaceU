@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class FabDPBotUP {
+	static int arr[];
+	static Scanner scan = new Scanner (System.in);
+	public static void main(String args[]){
+		int t=scan.nextInt();
+		//arr = new int[t+1];
+		for(int i=0;i<t;i++){
+			arr = new int[t+1];
+			System.out.println(fabo(scan.nextInt()-1));
+		}
+	}
+	
+	public static int fabo(int n){
+		if(n<2) return 1;
+		if(arr[n]!=0) return arr[n];
+		return arr[n]=fabo(arr[n-1])+fabo(arr[n-2]);
+	}
+}

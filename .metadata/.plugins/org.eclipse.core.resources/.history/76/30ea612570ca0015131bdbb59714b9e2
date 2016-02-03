@@ -1,0 +1,26 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class CounterGame {
+	static Scanner scan = new Scanner (System.in);
+	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String args[]) throws IOException{
+		int t= scan.nextInt(),count;
+		long n;
+		for(int i=0;i<t;i++){
+			n= br.read();
+			count=0;
+			//while(n>1){
+				if((n & -n )==n)
+					System.out.println("Visha");
+				//n--;
+			//}
+//			if(count%2==0)
+//				System.out.println("Richard");
+//			else System.out.println("Louise");
+		}
+	}
+}
+

@@ -603,3 +603,65 @@ org.osgi.framework.BundleException: Unable to acquire the state change lock for 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 15:44:58.998
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:02:07.759
+!MESSAGE The artifact poi:poi:jar:3.1-FINAL has been relocated to org.apache.poi:poi:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:02:07.759
+!MESSAGE The artifact axis:axis-jaxrpc:jar:1.4 has been relocated to org.apache.axis:axis-jaxrpc:jar:1.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:25.758
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:26.797
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:37.970
+!MESSAGE The artifact poi:poi:jar:3.1-FINAL has been relocated to org.apache.poi:poi:jar:3.1-FINAL
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:37.970
+!MESSAGE The artifact axis:axis-jaxrpc:jar:1.4 has been relocated to org.apache.axis:axis-jaxrpc:jar:1.4
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:38.108
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:06:39.264
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:09:50.010
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:09:50.013
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:09:50.021
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-02-03 16:09:50.023
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2016-02-03 16:36:04.790
+!MESSAGE Full project indexing required:
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/dnsns.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/icedtea-sound.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/localedata.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunjce_provider.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/sunpkcs11.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/ext/zipfs.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar
+  [+] /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:170)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:126)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)

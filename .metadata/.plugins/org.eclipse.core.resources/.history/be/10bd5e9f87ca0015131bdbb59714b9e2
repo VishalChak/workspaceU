@@ -1,0 +1,6 @@
+import java.util.Scanner;
+
+public class LCS {
+	static Scanner scan = new Scanner (System.in);
+	
+}
