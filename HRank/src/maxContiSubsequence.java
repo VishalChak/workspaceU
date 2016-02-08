@@ -8,7 +8,7 @@ public class maxContiSubsequence {
 	 arr= new int [n];
 	 for(int i=0;i<n;i++)
 		 arr[i]= scan.nextInt();
-	 System.out.println(withDP() +"  "+withDP());
+	 System.out.println(withDP() +"  "+withDP()+" "+alternativeDP());
 }
  
  
@@ -42,4 +42,17 @@ public class maxContiSubsequence {
 	 }
 	 return max;
  }
+ 
+ public static int alternativeDP(){
+	 int n= arr.length;
+	 m=new int[n+1];
+	 m[0]=arr[0];
+	 m[1] = (arr[0]>arr[1]?arr[0]:arr[1]);
+	 for(int i=2;i<n;i++){
+		 m[i]=(m[i-1]>m[i-2]+arr[i]?m[i-1]:m[i-2]+arr[i]);
+	 }
+	 return m[n-1];
+ }
+ 
+ 
 }

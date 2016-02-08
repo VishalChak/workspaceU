@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+
+class List{
+	int data;
+	List next;
+}
+
+public class ReverceLinkedList {
+ static Scanner scan = new Scanner(System.in);
+ public static void main(String args[]){
+	 List root=null,temp;
+ }
+}

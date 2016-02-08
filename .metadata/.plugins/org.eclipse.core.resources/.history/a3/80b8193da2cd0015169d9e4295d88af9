@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class mulUsingRecursion {
+		static int sum;
+		static Scanner scan = new Scanner(System.in);
+		public static void main(String args[]){
+			int x= scan .nextInt();
+			int y=scan.nextInt();
+			}
+		
+		public static void mul (int x,int y){
+			if(y>0){
+				sum+=x;
+				mul(x, y--);
+				}
+		}
+
+		
+}

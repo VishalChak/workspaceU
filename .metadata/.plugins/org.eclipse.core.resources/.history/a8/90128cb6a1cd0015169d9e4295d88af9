@@ -1,0 +1,7 @@
+import java.util.Scanner;
+
+public class mulUsingRecursion {
+		static int x;
+		static Scanner scan = new Scanner(System.in)
+
+}

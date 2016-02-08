@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class PairsFromTwoArr {
+	static int a[],b[];
+	static Scanner scan = new Scanner (System.in);
+	public static void main(String args[]){
+		int n=scan.nextInt();
+		for(int i=0;i<n;i++)
+			a[i]= scan.nextInt();
+		n=scan.nextInt();
+		for(int i=0;i<n;i++)
+			b[i]= scan.nextInt();
+	}
+	
+	public static void qsort(int i,int j){
+		if(i<j){
+			int m =partition(i,j);
+			qsort(i,m-1);
+			qsort(m+1, j);
+		}
+	}
+	
+	public static int partition(int l,int r){
+		
+	}
+}

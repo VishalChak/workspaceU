@@ -1,0 +1,8 @@
+class List{
+	int data;
+	List nextl
+}
+
+public class ReverceLinkedList {
+
+}

@@ -1,0 +1,4 @@
+
+public class guava {
+	static int arr[];
+}

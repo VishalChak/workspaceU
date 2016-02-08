@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+public class permutation {
+	static Scanner scan = new Scanner(String.in)
+}

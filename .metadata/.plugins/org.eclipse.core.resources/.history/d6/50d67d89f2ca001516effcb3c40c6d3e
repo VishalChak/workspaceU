@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CalatanNo {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String args[]){
+		
+		int n=scan.nextInt();
+		System.out.print(directEquation(n)+" ");
+		
+	}
+	
+	
+	public static int withOutDP(int n){
+		
+	}
+	
+	public static int directEquation(int n){
+		int ans=1,x=1,j=n;
+		for(int i=2*n;i>n;i--){
+			ans*=i;
+			x*=j;
+			j--;
+		}
+		
+		return ans/((n+1)*x);
+	}
+}

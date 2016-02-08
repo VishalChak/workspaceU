@@ -1,0 +1,6 @@
+import java.util.Scanner;
+
+public class Qsort {
+	static Scanner scan = new Scanner (System.in);
+	static arr[]
+}

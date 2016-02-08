@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class MulExceptCurrent {
+	static Scanner scan = new Scanner(System.in);
+	static int arr[];
+	public static void main(String args[]){
+		int n = scan.nextInt(),x=1,y=1;
+		arr= new int[n];
+		for(int i=0;i<n;i++)
+			arr[i]= scan.nextInt();
+		x= arr[0];
+		arr[0]=1;
+		for(int i=1;i<n;i++){
+			y=arr[i];
+			arr[i]=x;
+			x*=y;
+		}
+		for(int i=0;i<n;i++)
+			
+	}
+}

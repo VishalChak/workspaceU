@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+public class BinaryString {
+	static Scanner scan = new Scanner(System.in)
+}

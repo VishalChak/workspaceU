@@ -1,0 +1,9 @@
+import java.util.Scanner;
+
+public class PairsFromTwoArr {
+	static int a[],b[];
+	static Scanner scan = new Scanner (System.in);
+	public static void main(String args[]){
+		
+	}
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Qsort {
+	static Scanner scan = new Scanner (System.in);
+	static int arr[];
+	public static void main(String args[]){
+		int n =scan.nextInt();
+		for(int i=0;i<n;i++)
+			arr[i]=scan.nextInt();
+		
+	}
+	
+	
+	public static void sort(int i,int j){
+		if(i<j){
+			int m = partition(i,j);
+			sort(i,m-1);
+			sort(m+1,j);
+		}
+	}
+	
+	public static int partition(int i,int j)
+}
