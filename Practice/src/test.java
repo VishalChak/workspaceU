@@ -1,5 +1,5 @@
 import java.util.Scanner;
-//
+//  EClipce Test For Git... ///
 public class test {
 	static Scanner scan = new Scanner(System.in);
 	public static void main(String args[]){
