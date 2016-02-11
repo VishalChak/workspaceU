@@ -5,7 +5,7 @@ public class permutation {
 	static String str;
 	public static void main(String args[]){
 		str=scan.next();
-		permu("", str);
+		permu1("", str);
 		
 	}
 	
@@ -20,6 +20,15 @@ public class permutation {
 		}
 	}
 	
+	
+	public static void permu1(String pre,String str){
+		if(str.length()==0)
+			System.out.println(pre);
+		else {
+			for(int i=0;i<str.length();i++)
+				permu1(pre+str.charAt(i), str.substring(0,i)+str.substring(i+1));
+		}
+	}
 	
 	
 }
