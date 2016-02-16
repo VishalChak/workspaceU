@@ -1,9 +1,0 @@
-import java.util.Scanner;
-
-public class guava {
-	static int arr[];
-	public static void main(String args[]){
-		Scanner scan = new Scanner(System.in);
-		int n=scan.n
-	}
-}

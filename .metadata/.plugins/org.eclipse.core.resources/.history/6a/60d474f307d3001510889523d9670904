@@ -1,0 +1,7 @@
+import java.util.Scanner;
+
+public class perfectSqureInChess {
+	static Scanner scan = new Scanner(System.in){
+		
+	}
+}

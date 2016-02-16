@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class bleakAndSouprrt {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String args[]){
+		int n= scan.nextInt();
+		for(int i= (int)(n-Math.ceil(Math.log(n)));i<n;i++){
+			
+		}
+	}
+	
+	
+}

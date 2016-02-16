@@ -51,7 +51,6 @@ public class boundryOfTree {
 		}
 	}
 	
-	
 	public static void printLeaf(Node root){
 		if(root!=null){
 			if(root.left==null && root.right==null)

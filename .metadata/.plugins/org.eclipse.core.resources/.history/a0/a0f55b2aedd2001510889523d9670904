@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class permutationDigitWithinTheRange {
+	static Scanner scan;
+	public static void main(String args[]){
+		scan = new Scanner(System.in);
+		
+	}
+}
+

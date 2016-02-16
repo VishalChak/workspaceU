@@ -1,27 +1,12 @@
-1:
-Coding :
-
-1. http://www.geeksforgeeks.org/print-a-given-matrix-in-spiral-form/
-2. http://www.geeksforgeeks.org/sum-of-two-linked-lists/
+1.Given a m*n matrix. m and n can be huge. We need to query the matrix for sum of submatrices. Input will be the top-left and bottom-right co-ordinates. We need to return the sum of submatrix in O(1) time.
+Solution: Do column wise sum of the matrix and store it. Again, do the row wise sum and store it.
 
 
-Technical :
+Find if two rectangles overlap Given two rectangles, find if the given two rectangles overlap or not.
 
-1.  Given a running stream of integers. I need to find the median of the running stream. I gave   solution using heaps. He was interested in the approach using tree, after a hint i was able to solve it using tree. He was convinced by my approach
-2. Design a data structure in which the operations like insert , delete and finding minimum element should be done in O(1) time complexity. I told him that i have already done this question so he was just interested in logic.
-3. Given n non-negative integers representing an 2-D elevation map where the width of each bar is 1, i need to compute how much water it is able to trap after raining.
-4.  Given an unsorted array which contains unique numbers from 0 to 999 and size of array is 1000. At one of the index the element has been replaced by some other element. I need to find the original element. Only logic was required.
-5.  An infix expression is given and i need to evaluate this expression. I told him that this is standard question, so he just asked me the logic and ask me to convert the infix expression to post fix expression.
-6.  An binary tree is given. He asked me to serialize and deserialize the given binary tree. I gave him the approach using pre order traversal and store the elements in array and using another array which will store whether a node element is leaf node or internal node. He was convinced with the approach. Then he asked me to write the code for the same logic.
-7. Discussion on what data structure i will use to implement recommendation engine. e.g. if someone buy mobile from Amazon, it should recommend the ear phones, power bank etc. It was a good discussion.
-8 .  Given a 2-D plane and number of points are given on that 2-D plane which are represented by its (x,y) co-ordinates. So i need to find the maximum number of points which can be lie on a single line.
-Answer : I gave the solution using hashing, i calculate the slope using any two points, now one by one checks the slope with other points if slope matches i will increase the count for that particular slope in hash map. Now i will traverse the hash map and find the maximum. Time complexity O(n2).
-Then discussion happens on what if slope comes out to be something that can even not be stored in type “long double”, what to do then.
-9. LRU cache implementation. I told him that i knew the answer already. So he asked me a different question.
-10  Given an array of integers. I need to modify the array so that each index of array contains product of all elements except for the its own index element. Twist is that i need to do it without using divison(/) operator. I was able to solve it with a little hint.
-11. Given a post order traversal of a binary search tree. He asked me to write a clean code to create a BST using the given post order traversal and return the root of the BST.
-12 .Given a stream of characters which can contain only alphabets [a-z]. I need to find the whether there is a duplicate element present or not and accordingly return true or false. He was interested in the worst case time complexity.
-13 .Given a sorted and rotated array. I need to find the search the given element in this array. Expected time complexity was O(log n).
-
-2: 
-Coding
+Help::-
+1) Need to cover (order is high to low priority): Trees, Heaps, sorting and searching, LL, Stacks, Queues, strings, DP, Greedy, Divide and conquer, hash map and collisions, recursion and back tracking, bit manipulation, basic graph algorithms, OOD, scalability and memory units, any missing topics.
+2) You sholud know the time complexity for STL data structures.
+Ex: For hashing, we will say we can find a value in O(1) but if we are using C++ STL, map was implemented with Balanced BST so it will take O(logn).
+3) You MUST prepare some beheaviroual questions, atlest standard quesitons like Why Amazon? Why do you want to live?
+4) Practise on paper because you need to write on paper in all rounds of interview.

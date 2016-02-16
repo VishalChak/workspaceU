@@ -1,8 +1,0 @@
-import java.util.Scanner;
-
-public class FabDPBotUP {
-	static int arr[];
-	static Scanner scan = new Scanner (Sysytem.in){
-		
-	}
-}

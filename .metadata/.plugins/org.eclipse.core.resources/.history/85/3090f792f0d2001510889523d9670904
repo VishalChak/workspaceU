@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class reverseWordsInString {
+	static Scanner scan;
+	public static void main(String args[]){
+		
+	}
+}

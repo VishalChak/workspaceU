@@ -1,7 +1,0 @@
-
-public class guava {
-	static int arr[];
-	public static void main(String args[]){
-		
-	}
-}

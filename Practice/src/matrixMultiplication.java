@@ -1,8 +1,10 @@
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class matrixMultiplication {
 	static Scanner scan = new Scanner(System.in);
 	public static void main(String args[]) {
+		HashMap<Integer, String> hashmap = new HashMap<>();
 		System.out.println("row col of first matrix");
 		int m= scan.nextInt();
 		int n= scan.nextInt();

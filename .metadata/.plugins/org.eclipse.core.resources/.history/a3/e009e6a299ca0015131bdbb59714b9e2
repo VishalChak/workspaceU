@@ -1,5 +1,0 @@
-import java.util.Scanner;
-
-public class recRal {
-	static Scanner scan = new Scanner (System.in);
-}

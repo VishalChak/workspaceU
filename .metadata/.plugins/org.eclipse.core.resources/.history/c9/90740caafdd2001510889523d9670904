@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class bleakAndSouprrt {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(String args[]){
+		int n= scan.nextInt();
+		boolean b=false;
+		System.out.println((int)Math.log10(n)+1);
+//		for(int i= (int)(n-Math.ceil(Math.log(n)));i<n;i++){
+//			if(check(i, n)){
+//				b=true;
+//				break;
+//			}
+//		}
+//		if(b)
+//			System.out.println("Support");
+//		else System.out.println("Bleak");
+	}
+	
+	public static boolean check(int n,int num){
+		
+			return true;
+		else return false;
+	}
+}

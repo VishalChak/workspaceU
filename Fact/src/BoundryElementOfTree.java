@@ -18,11 +18,9 @@ public class BoundryElementOfTree {
 				root=temp;
 			else insert(root, temp);
 		}
-		int k=scan.nextInt();
-		System.out.println(isGivenSum(root, k));
-		
+		//mirror(root);
+		print(root);
 	}
-	
 	
 	public static int  isGivenSum(Tnode root,int k){
 		if(root!=null){
@@ -98,6 +96,16 @@ public class BoundryElementOfTree {
 		}
 	}
 	
+	public static void mirror(Tnode root){
+		Tnode temp;
+		if(root!=null){
+			temp =root.left;
+			root.left = root.right;
+			root.right=temp;
+			mirror(root.left);
+			mirror(root.right);
+		}
+	}
 	
 	public static void insert(Tnode root,Tnode temp){
 		if(temp.data<=root.data)
@@ -118,5 +126,4 @@ public class BoundryElementOfTree {
 		temp.right=null;
 		return temp;
 	}
-	
 }

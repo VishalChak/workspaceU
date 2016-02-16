@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+public class missing {
+	static Scanner scan = new Scanner (System.in);
+}

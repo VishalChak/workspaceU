@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class bleakAndSouprrt {
+	static Scanner scan = new Scanner(System.in);
+	public static void main(Stringargs[]){
+		
+	}
+}
