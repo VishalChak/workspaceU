@@ -2,8 +2,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.sql.DatabaseMetaData;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -21,9 +19,8 @@ public class JacksonTester {
 	static Double Heaviest,Lightest,avg;
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
-		String jsonFile = "src/Meteorite_Landings.json";
-		if(new File(jsonFile).exists())
-			readFileBYJSON(jsonFile);
+		String jsonFile = "/home/vishal/workspaceU/Meteorite_Landings.json";
+		readFileBYJSON(jsonFile);
 		int x;
 		do{
 			System.out.println("1:Number of recording grouped by recclass");
@@ -59,6 +56,7 @@ public class JacksonTester {
 	    	dateMap = new HashMap<Integer, Integer>();
 	    	try {
 				obj =parser.parse(new FileReader(jsonFile));
+				System.out.println(obj);
 				array= (JSONArray)obj;
 			} catch (FileNotFoundException fnfe) {
 				System.err.println(fnfe.getMessage());
@@ -69,6 +67,7 @@ public class JacksonTester {
 			}
 	    	avg = 0.0;
 	    	Heaviest= 0.0;
+	    	System.out.println(array);
 	    	for(Object node: array){
 				objNode = (JSONObject) node;
 				key = (String)objNode.get("recclass");
@@ -97,10 +96,5 @@ public class JacksonTester {
 				count++;
 			}
 	    	avg= avg/count;
-	}
-	 
-	 public static void sort(){
-		 
-	 }
-	 
+	 	}
 }
