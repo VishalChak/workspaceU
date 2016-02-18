@@ -1,2 +1,0 @@
-1.Given a m*n matrix. m and n can be huge. We need to query the matrix for sum of submatrices. Input will be the top-left and bottom-right co-ordinates. We need to return the sum of submatrix in O(1) time.
-Solution: Do column wise sum of the matrix and store it. Again, do the row wise sum and store it.
