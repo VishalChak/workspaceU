@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -20,18 +21,31 @@ public class JacksonTester {
 	static Double Heaviest,Lightest,avg;
 	public static void main(String[] args) {
 		scan = new Scanner(System.in);
-		String jsonFile = "D:/metadata.json";
-		readFileBYJSON(jsonFile);
-		//System.out.println(Heaviest +" "+Lightest +" "+avg);
-//		int x;
-//		do{
-//			System.out.println("1:Number of recording grouped by recclass");
-//			System.out.println("2:Heaviest and Lightest Meteorite landing recorded");
-//			System.out.println("3:Number of recordings per 10 year period Sorted by Year Range Ascending");
-//			System.out.println("4:Number of recordings per 10 year period Sorted by Number of Sightings Descending");
-//			System.out.println("5:Average mass of meteorites");
-//			x=scan.nextInt();
-//		}while(x>0 && x< 6);
+		String jsonFile = "src/Meteorite_Landings.json";
+		if(new File(jsonFile).exists())
+			readFileBYJSON(jsonFile);
+		int x;
+		do{
+			System.out.println("1:Number of recording grouped by recclass");
+			System.out.println("2:Heaviest and Lightest Meteorite landing recorded");
+			System.out.println("3:Number of recordings per 10 year period Sorted by Year Range Ascending");
+			System.out.println("4:Number of recordings per 10 year period Sorted by Number of Sightings Descending");
+			System.out.println("5:Average mass of meteorites");
+			x=scan.nextInt();
+			switch(x){
+			case 1: for(String key : map.keySet())
+				System.out.println(key +"  "+map.get(key));
+				
+			break;
+			case 2:
+				System.out.println("Heaviest: "+Heaviest+"   Lightest"+Lightest);
+				break;
+			case 3:
+				break;
+			}
+			System.out.println();
+			System.out.println();
+		}while(x>0 && x< 6);
     }
     
 	 public static void readFileBYJSON (String jsonFile){
@@ -39,7 +53,7 @@ public class JacksonTester {
 	    	Object obj;
 	    	JSONObject objNode=null;
 	    	String key, date;
-	    	int count= 0,year,x,y,temp=0;
+	    	int count= 0,year;
 	    	Double db; 
 	    	map =new HashMap<String, Integer>();
 	    	dateMap = new HashMap<Integer, Integer>();
@@ -77,16 +91,16 @@ public class JacksonTester {
 					year= year-year%10;
 					if(dateMap.get(year)==null)
 						dateMap.put(year, 1);
-					else dateMap.put(year, dateMap.get(year).intValue()+1);
-					System.out.println(dateMap.get(year));
+					else dateMap.put(year, dateMap.get(year)+1);
+					
 				}
-//				for(Integer i : dateMap.keySet()){
-//					//System.out.println(i+" "+dateMap.get(i));
-//					
-//				}
 				count++;
 			}
-	    	//System.out.println(count +"     "+temp);
 	    	avg= avg/count;
 	}
+	 
+	 public static void sort(){
+		 
+	 }
+	 
 }
