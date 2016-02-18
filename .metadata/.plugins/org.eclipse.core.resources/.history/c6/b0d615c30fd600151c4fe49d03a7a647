@@ -1,0 +1,79 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Scanner;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+public class JacksonTester {
+	
+	static JSONArray array=null;
+	static Scanner scan;
+	static HashMap< String, Integer> map;
+	static int Heaviest,Lightest;
+	public static void main(String[] args) {
+		scan = new Scanner(System.in);
+		String jsonFile = "/home/vishal/metadata.json";
+		readFileBYJSON(jsonFile);
+//		System.out.println(Heaviest +" "+Lightest);
+//		int x;
+//		do{
+//			System.out.println("1:Number of recording grouped by recclass");
+//			System.out.println("2:Heaviest and Lightest Meteorite landing recorded");
+//			System.out.println("3:Number of recordings per 10 year period Sorted by Year Range Ascending");
+//			System.out.println("4:Number of recordings per 10 year period Sorted by Number of Sightings Descending");
+//			System.out.println("5:Average mass of meteorites");
+//			x=scan.nextInt();
+//		}while(x>0 && x< 6);
+    }
+    
+	 public static void readFileBYJSON (String jsonFile){
+		 JSONParser parser = new JSONParser();
+	    	Object obj;
+	    	JSONObject objNode=null;
+	    	String key ,str;
+	    	int count= 0 ,mass;
+//	    	Heaviest=0,Lightest=0
+	    	map =new HashMap<String, Integer>();
+	    	try {
+				obj =parser.parse(new FileReader(jsonFile));
+				array= (JSONArray)obj;
+			} catch (FileNotFoundException fnfe) {
+				System.err.println(fnfe.getMessage());
+			} catch (IOException io) {
+				System.err.println(io.getMessage());
+			} catch (ParseException pe) {
+				System.err.println(pe.getMessage());
+			}
+	    	for(Object node: array){
+				objNode = (JSONObject) node;
+				key = (String)objNode.get("recclass");
+				if(map.get(key)==null)
+					map.put(key,0);
+				else map.put(key,map.get(key)+1);
+				
+				//str = (String) objNode.get("mass (g)");
+				System.out.println((Integer) objNode.get("mass (g)"));
+//				mass = Integer.parseInt((String)objNode.get("mass (g)"));
+//				if(count==0){
+//					Lightest=mass;
+//				} else if(mass<Lightest){
+//					Lightest = mass;
+//				}
+//				
+//				if(Heaviest< mass)
+//					Heaviest = mass;
+//				
+				
+				count++;
+			}
+			/*for(String str: map.keySet()){
+				System.out.println(str+" , "+map.get(str));
+			}*/
+			
+	 }
+}

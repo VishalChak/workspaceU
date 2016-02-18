@@ -1,0 +1,50 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.TreeSet;
+
+public class ReadCVS {
+
+  public static void main(String[] args) {
+	  String csvFile = "/home/vishal/Meteorite_Landings.csv";
+	  reader(csvFile);
+	  }
+
+  public static  void reader(String csvFile) {
+	  BufferedReader br = null;
+	  String line = "";
+	  String cvsSplitBy = ",";
+	  HashMap<String, Node> data = new HashMap<String, Node>();
+	  TreeSet< String> node ;
+	  try {
+		  br = new BufferedReader(new FileReader(csvFile));
+		  while ((line = br.readLine()) != null) {
+			  String[] nodeArr = line.split(cvsSplitBy);
+			  node = new TreeSet<String>();
+			  for(String str : nodeArr)
+				node.add(str);
+			  data.put(nodeArr[1], node);
+			  
+			}
+} catch (FileNotFoundException e) {
+		e.printStackTrace();
+	} catch (IOException e) {
+		e.printStackTrace();
+	} finally {
+		if (br != null) {
+			try {
+				br.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+	 for(String str : data.keySet()){
+		 System.out.println(data.get(str).size());
+	 }
+	System.out.println("Done");
+  }
+
+}

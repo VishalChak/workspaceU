@@ -1,0 +1,7 @@
+import java.util.TreeSet;
+
+public class Test{
+	public static void main(String aggs[]){
+		TreeSet<TreeSet<Node>> matadat = new TreeSet<TreeSet<Node>>();
+	}
+}

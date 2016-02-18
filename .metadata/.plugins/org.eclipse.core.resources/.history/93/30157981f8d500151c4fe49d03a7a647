@@ -1,0 +1,39 @@
+import java.awt.List;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.TreeSet;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+
+public class Test{
+	public static void main(String args[]){
+		
+		Data data=null;
+		TreeSet<TreeSet<Node>> metadata = new TreeSet<TreeSet<Node>>();
+		File jsonFile = new File("/home/vishal/matadata.json");
+		if (jsonFile.exists()) {
+			BufferedReader br = null;
+			try {
+				br = new BufferedReader(new FileReader(jsonFile));
+			} catch (FileNotFoundException fnf) {
+				System.err.println(fnf.getMessage());
+			}
+			Gson gson = new Gson();
+			 data = gson.fromJson("/home/vishal/matadata.json", Data.class);
+			//metadata = gson.fromJson(br, new TypeToken<TreeSet<TreeSet<Node>>>() 
+			
+		}
+		System.out.println(data);
+	}
+	
+}
+
+class Data {
+    private ArrayList<Node> node;
+}

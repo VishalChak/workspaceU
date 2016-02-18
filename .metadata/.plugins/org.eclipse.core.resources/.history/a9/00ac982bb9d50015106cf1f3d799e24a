@@ -1,0 +1,128 @@
+//
+//public class Node {
+//	
+//}
+
+
+class Node implements Comparable<Node>{
+	private String name;
+	private String id ;
+	private String nametype ;
+	private String recclass ;
+//	private String mass ;
+//	private String fall  ;
+//	private String year  ;
+//	private String reclat ;
+//	private String reclong;
+//	private String address;
+//	private String zip ;
+//	private String city;
+//	private String POINT;
+//	private String state;
+	
+	public String getname() {
+		return name;
+	}
+	public void setname(String name) {
+		this.name = name;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getnametype() {
+		return nametype;
+	}
+	public void setnametype(String nametype) {
+		this.nametype = nametype;
+	}
+	
+	public String getrecclass() {
+		return recclass;
+	}
+	public void setrecclass(String recclass) {
+		this.recclass = recclass;
+	}
+	
+	public String getfall() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	public String getid() {
+		return id;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	
+	
+	@Override
+	public int compareTo(Node id) {
+		// TODO Auto-generated method stub
+		return this.id.compareTo(id.getid());
+	}
+	
+}

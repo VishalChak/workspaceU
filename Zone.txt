@@ -1,0 +1,12 @@
+1.Given a m*n matrix. m and n can be huge. We need to query the matrix for sum of submatrices. Input will be the top-left and bottom-right co-ordinates. We need to return the sum of submatrix in O(1) time.
+Solution: Do column wise sum of the matrix and store it. Again, do the row wise sum and store it.
+
+
+Find if two rectangles overlap Given two rectangles, find if the given two rectangles overlap or not.
+
+Help::-
+1) Need to cover (order is high to low priority): Trees, Heaps, sorting and searching, LL, Stacks, Queues, strings, DP, Greedy, Divide and conquer, hash map and collisions, recursion and back tracking, bit manipulation, basic graph algorithms, OOD, scalability and memory units, any missing topics.
+2) You sholud know the time complexity for STL data structures.
+Ex: For hashing, we will say we can find a value in O(1) but if we are using C++ STL, map was implemented with Balanced BST so it will take O(logn).
+3) You MUST prepare some beheaviroual questions, atlest standard quesitons like Why Amazon? Why do you want to live?
+4) Practise on paper because you need to write on paper in all rounds of interview.

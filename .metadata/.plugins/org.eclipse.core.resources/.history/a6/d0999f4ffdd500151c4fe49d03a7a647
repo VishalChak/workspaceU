@@ -1,0 +1,13 @@
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class JacksonTester {
+
+    public static void main(String[] args) {
+    	JSONArray array = new JSONArray(new File("/home/vishal/metadata.json"));
+    	for(int index = 0; index < array.length(); ++index) {
+    	  JSONObject offerObject = array.getJSONObject(index);
+    	  //... your offer calculation...add offer to list...
+    	}
+    }
+}
